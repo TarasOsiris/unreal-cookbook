@@ -37,4 +37,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Status)
 	TEnumAsByte<Status> Status;
+
+protected:
+	virtual void BeginPlay() override;
 };

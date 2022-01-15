@@ -1,16 +1,17 @@
 {
-  "FileVersion": 3,
-  "EngineAssociation": "4.27",
-  "Category": "",
-  "Description": "",
-  "Modules": [
-    {
-      "Name": "CppCookbook",
-      "Type": "Runtime",
-      "LoadingPhase": "Default",
-      "AdditionalDependencies": [
-        "CoreUObject"
-      ]
-    }
-  ]
+	"FileVersion": 3,
+	"EngineAssociation": "4.27",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "CppCookbook",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"CoreUObject",
+				"Engine"
+			]
+		}
+	]
 }

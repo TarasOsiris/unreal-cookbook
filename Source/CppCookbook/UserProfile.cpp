@@ -4,6 +4,7 @@
 #include "UserProfile.h"
 
 #include "CppCookbookGameModeBase.h"
+#include "MyTarasAction.h"
 
 void AUserProfile::SayHello()
 {
@@ -42,4 +43,8 @@ void AUserProfile::CreateObjectTest()
 		MyBoi->ConditionalBeginDestroy();
 		UE_LOG(LogTemp, Warning, TEXT("Maboi 3, %s"), *MyBoi->GetName());
 	}
+
+	// create UObject, reference to static class
+	UMyTarasAction* MyTarasAction = NewObject<UMyTarasAction>(UMyTarasAction::StaticClass());
+	UE_LOG(LogTemp, Warning, TEXT("Maboi 4, %s"), *MyTarasAction->GetName());
 }
