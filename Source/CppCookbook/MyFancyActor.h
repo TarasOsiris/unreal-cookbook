@@ -14,7 +14,9 @@ class CPPCOOKBOOK_API AMyFancyActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AMyFancyActor();
-
+	
+	UPROPERTY()
+	UStaticMeshComponent* Mesh;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
