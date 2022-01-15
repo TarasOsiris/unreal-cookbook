@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MyFancyActor.h"
 #include "ObjectUserProfile.h"
 #include "TarasColoredTexture.h"
 #include "UserProfile.h"
@@ -37,7 +38,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Status)
 	TEnumAsByte<Status> Status;
-
+	
+	UPROPERTY()
+	AMyFancyActor* SpawnedActor;
 protected:
+	UFUNCTION()
+	void DestroyActorFunction();
+	void SpawnActor();
 	virtual void BeginPlay() override;
 };
